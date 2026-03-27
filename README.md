@@ -48,9 +48,11 @@ CREATE TABLE IF NOT EXISTS DETAILS (
     TEMPDATE DATE
 );
 ```
--- 3. Create Donation History Table
+-- 3. Create Donation History Table:
+```bash
 CREATE TABLE IF NOT EXISTS HIST (
     id INT, 
     DonHist DATE,
     FOREIGN KEY (id) REFERENCES DETAILS(id) ON DELETE CASCADE
 );
+```
