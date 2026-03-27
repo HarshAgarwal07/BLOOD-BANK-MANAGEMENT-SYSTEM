@@ -25,11 +25,14 @@ Before running the application, ensure you have the following installed:
   pip install mysql-connector-python
 
 ### CREATING DATABASE IN SQL
--- 1. Create the Database
+-- 1. Create the Database:
+```bash
 CREATE DATABASE IF NOT EXISTS bloodbank;
 USE bloodbank;
+```
 
--- 2. Create Donor Details Table
+-- 2. Create Donor Details Table:
+```bash
 CREATE TABLE IF NOT EXISTS DETAILS (
     id INT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
@@ -44,7 +47,7 @@ CREATE TABLE IF NOT EXISTS DETAILS (
     email VARCHAR(100),
     TEMPDATE DATE
 );
-
+```
 -- 3. Create Donation History Table
 CREATE TABLE IF NOT EXISTS HIST (
     id INT, 
