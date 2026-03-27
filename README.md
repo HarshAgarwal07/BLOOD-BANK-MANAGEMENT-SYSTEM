@@ -18,7 +18,7 @@ A Python and MySQL-based management system designed to streamline donor registra
 
 ## 🛠️ Technical Setup
 
-### 1. Prerequisites
+### Prerequisites
 Before running the application, ensure you have the following installed:
 * **Python 3.x**
 * **MySQL Server**
@@ -26,6 +26,7 @@ Before running the application, ensure you have the following installed:
   ```bash
   pip install mysql-connector-python
 
+### CREATING DATABASE IN SQL
 -- 1. Create the Database
 CREATE DATABASE IF NOT EXISTS bloodbank;
 USE bloodbank;
